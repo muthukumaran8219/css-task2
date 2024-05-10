@@ -8,26 +8,32 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-   
     <div class="sidebar"> 
-        
         <div id="d"><h1>D</h1></div>
-
         <div class="icons">
-            <i class='bx bxs-home'></i>   
-            <i class='bx bxs-contact'></i>
+            <i class='bx bxs-home'></i>
+            <div class="white"><i class='bx bxs-contact'></i></div>   
             <i class='bx bxs-megaphone'></i>
             <i class='bx bx-wrench'></i>
             <i class='bx bx-bar-chart-square'></i>
             <i class='bx bxs-image'></i>
             <i class='bx bx-dollar-circle'></i>
         </div>
-       
     </div>
-   
-
+    
     <div class="heading1">
+       <div class="navbarright">
         <h2 class="contact">Edit Contact</h2>
+        <div class="dem">
+            <h4>dembsky</h4>
+            <h4>inc.<i class='bx bxs-down-arrow'></i></h4>
+            <div class="vline"></div>
+            <i class="bx bxs-cog" id="nav-space"></i>
+            <i class='bx bxs-help-circle'></i>
+            <i class='bx bx-user' ></i>
+        </div>
+    </div>
+       
         <div class="divmain">
             <div class="div1">
                 <h3>Groups</h3><br><br>
@@ -41,10 +47,12 @@
                 <p>Notes</p><br><br>
                 <p>Audit Log</p><br><br>
             </div>
+            
+            
             <div class="div2">
                 <h4>Basic Information</h4><br>
                 <div>
-                     <label for="">Email</label><br><br>
+                     <label for="">Email <i class="bx bxs-circle" id="highlight-red"></i></label><br><br>
                      <input class="input" type="text" placeholder="contact@demsky.me">
                 </div>
                 <br><br>
@@ -66,19 +74,19 @@
                     <div class="fullname">
                         <label for="">Full Name</label>
                         <br><br>
-                        <input class="input3" type="text" placeholder="jhdtj ndhtg">
+                        <input class="input" type="text" placeholder="jhdtj ndhtg">
                         <br><br>
                     </div>
 
                         <!-- next label -->
                     <div class="label3">
                         <div>
-                            <label for="">Status</label>
+                            <label for="">Status<i class="bx bxs-circle" id="highlight-red"></i></label>
                             <br><br>
                             <input class="input2" type="text" placeholder="bangalur">
                         </div>
                         <div>
-                            <label for="">Tracking</label>
+                            <label for="">Tracking<i class="bx bxs-circle" id="highlight-red"></i></label>
                             <br><br>
                             <input class="input2" type="text" placeholder="mail no">
                             <br><br>
@@ -120,6 +128,7 @@
                                 <br><br>
                                 <input class="input2" type="text">
                             </div>
+                            
                             <div>
                                 <label for="">Country</label>
                                 <br><br>
@@ -133,18 +142,13 @@
                             <br><br>
                             <input class="input" type="text">
                             <br><br>
-                        
-
-
-
             </div>
-
-
-
+            
+            
             <div class="div3">
                 <div class="button">
-                    <button>Goup Input</button>
-                    <button>Single Input</button>
+                    <button class="groupinput">Goup Input</button>
+                    <button class="singleinput">Single Input</button>
                 </div>
                 <br>
                 <h2>Add Group Inputs</h2>
@@ -152,49 +156,64 @@
                 <p>Click and drag to add a new input anywhere on the<br>
                      layout, then delete or edit field to customize.</p>
                      <br>
-                     <input class="input" type="text" name="search" placeholder="search">
+                     <input class="inputsearch" type="text" name="search" placeholder="search">
                      <br><br>
 
                      <div class="boxes">
                         <div class="box1">
-                         <h3>Basic Information</h3>
-                         <p>Email, First Name, Last Name, Full Name, Status, Tracking</p>
-                        </div>
+                            <div class="user"><i class='bx bxs-user'></i></div>
+                            <div>
+                                <h3>Basic Information</h3>
+                                <p>Email, First Name, Last Name, Full Name, Status, Tracking</p>
+                            </div>
+                         </div>
                         <br><br>
                         <div class="box2">
-                            <h3>Address Information</h3>
-                            <p>Address, State, City, ZIP,County, Country</p>
+                            <div class="user">
+                                <i class='bx bx-home' ></i>
+
+                            </div>
+                            <div><h3>Address Information</h3>
+                                <p>Address, State, City, ZIP,County, Country</p>
+                            </div>
+                            
                         </div>
                         <br><br>
                         <div class="box3">
-                            <h3>Company Information</h3>
-                            <p>Name, Industry, Department, Title, Role, SISC Code, Company Size, Annual Revenue</p>
+                            <div class="building">
+                                <i class='bx bx-buildings'></i>
+
+                            </div>
+                            <div><h3>Company Information</h3>
+                                <p>Name, Industry, Department, Title, Role, SISC Code, Company Size, Annual Revenue</p>
+                            </div>
                         </div>
                         <br><br>
+                        
                         <div class="box4">
-                            <h3>Sales Representative</h3>
-                            <P>First Name, Last Name, Email, Phone Photo</P>
+                            <div class="group">
+                                <i class='bx bxs-group'></i>
 
+                            </div>
+                            
+                            <div><h3>Sales Representative</h3>
+                                <P>First Name, Last Name, Email, Phone Photo</P>
+                            </div>
                         </div>
                         <br><br>
+                        
                         <div class="box5">
-                            <h3>System Information</h3>
-                              <P>Contact ID, External System ID, Source, source, Usub Reason, Date Joined, Expire Date, Updated Date, Never put on hold</P>
+                            <div class="user">
+                                <i class='bx bx-target-lock'></i>
 
+                            </div>
+                            <div><h3>System Information</h3>
+                                <P>Contact ID, External System ID, Source, source, Usub Reason, Date Joined, Expire Date, Updated Date, Never put on hold</P>
+                            </div>
                         </div>
                         <br><br>
-                        <div class="box6">
-
-                        </div>
-                    
-
-                     </div>
-
-            
-                
-        
+                    </div>
             </div>
-
         </div>                      
         
    
